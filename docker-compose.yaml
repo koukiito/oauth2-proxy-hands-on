@@ -1,7 +1,7 @@
 services:
   nginx:
     container_name: ${COMPOSE_PROJECT_NAME}_nginx
-    image: nginx:latest
+    image: nginx:1.27.4
     # Do not expose port when production. For production, delete the following two lines.
     ports:
       - "8000:80"
